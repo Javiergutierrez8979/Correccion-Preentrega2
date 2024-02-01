@@ -1,0 +1,283 @@
+/*quitando valores por defecto*/
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background: linear-gradient(to right, grey , black);
+
+}
+
+/*header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-right: 1em;
+}*/
+
+header ul { 
+    display: inline-block;
+
+}
+
+header ul li {
+    display: inline-block;
+}
+
+
+/*config del logo del header*/
+
+#logo {
+    width: 150px;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    margin-left: 0  ;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-index{
+    width: 95%;
+    box-shadow: 10px 10px 5px 0px rgba(143,139,143,1);
+}
+
+.texto-index{
+    padding: 2em;
+    margin: 2em;;
+}
+
+.titulo{
+    display: flex;
+
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* config de los footer*/
+
+footer ul li {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+}
+
+/*card de flota*/
+
+.card img {
+    display: flex;
+    justify-content: center;
+    width: 30em;
+}
+
+div.card {
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+div img {
+    width: 40em;
+    padding-left: 20px;
+}
+
+
+
+section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+
+}
+
+form {
+
+    display: flex;
+    justify-content: center;
+ 
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  form li + li {
+    margin-top: 1em;
+  }
+  
+  label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+  }
+  /* Tamaño del form*/
+
+  form input {
+    width: 40em;
+  }
+  
+
+  textarea {
+    /* Alinear los campos de texto */
+    vertical-align: top;
+  
+    /* Dimension del texto */
+    width: 40em;
+    height:40em;
+  }
+
+  /*boton de contacto enviar*/
+
+.button{
+
+    margin-left: 42em;
+    background-color: blue;
+
+}
+
+.img-flota1{
+    padding: 0;
+    margin: 1em;
+    width: 90%;
+    box-shadow: 10px 10px 5px 0px rgba(143,139,143,1);
+
+
+}
+
+.img-flota2{
+    padding: 0;
+    margin: 1em;
+    width: 90%;
+    box-shadow: 10px 10px 5px 0px rgba(143,139,143,1);
+
+
+}
+
+.grid-container { 
+    display: grid;
+    justify-content: center;
+    align-items:flex-start  ;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    padding-top: 2em;
+
+}
+
+.grid-item {
+
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+
+}
+
+.grid-item-text1{
+    padding: 10px;
+    color: antiquewhite;
+}
+
+.grid-item-text2{
+    padding: 10px;
+    color: antiquewhite;
+}
+
+.texto{
+    margin: 2em;
+    color: antiquewhite;
+}
+.titulos{
+    margin: 1em;
+    color: antiquewhite;
+
+
+}
+
+
+
+
+
+
+
+/*mobile*/
+
+@media only screen and (min-width: 300px) and (max-width: 768px) {
+	.grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,1fr);
+        
+    }
+
+    .grid-item-text1{
+        grid-column: 1/5;
+        grid-row: 2;
+    }
+
+    .grid-item-text2{
+        grid-column: 1/5;
+        grid-row: 4;
+    }
+
+    .grid-item1{
+        grid-column: 1/4;
+        grid-row: 1;
+        width: 90%;
+    }
+
+    .grid-item2{
+        grid-column: 1/5;
+        grid-row: 3;
+        width: 90%;
+       
+    }
+
+    .img-flota1{
+        padding: 0;
+        width: 90%;
+        box-shadow: 10px 10px 5px 0px rgba(143,139,143,1);
+
+    }
+
+    .img-flota2{
+        padding: 0;
+        width: 90%;
+        box-shadow: 10px 10px 5px 0px rgba(143,139,143,1);
+
+    }
+
+    .sec-servicios{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}
+
+
+
+
+
+
+
